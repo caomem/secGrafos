@@ -1,14 +1,30 @@
 \begin{thebibliography}{1}
 
+\bibitem{GraphTheoryApplicationsBondy}
+J.~A. Bondy and U.~S.~R. Murty.
+\newblock {\em Graph Theory With Applications}.
+\newblock Elsevier Science Publishing, New York, 5 edition, 1982.
+
 \bibitem{euler:KOENIGSBERG}
 Leonhard Euler.
 \newblock Leonhard euler and the k{\"o}nigsberg bridges.
 \newblock {\em Scientific American}, 189(1):66--72, 1953.
 
-\bibitem{grafos1}
-J.~A. Bondy and U.~S.~R. Murty.
-\newblock {\em Graph Theory With Applications}.
-\newblock Elsevier Science Publishing, New York, 5 edition, 1982.
+\bibitem{graphTheoryFHarary}
+Frank Harary.
+\newblock {\em Graph Theory}.
+\newblock Westview Press, 1969.
+
+\bibitem{kirchhoff1847ueber}
+Gustav Kirchhoff.
+\newblock Ueber die aufl{\"o}sung der gleichungen, auf welche man bei der
+  untersuchung der linearen vertheilung galvanischer str{\"o}me gef{\"u}hrt
+  wird.
+\newblock {\em Annalen der Physik}, 148(12):497--508, 1847.
+
+\bibitem{cayley1897theory}
+A~Cayley.
+\newblock On the theory of the analytical forms called trees, math, 1897.
 
 \bibitem{grafos0}
 Paulo Oswaldo~Boaventura Netto.
