@@ -105,10 +105,21 @@ Nesse trabalho, não nos interessa o estudo de multigrafos ou pseudografos. Por 
 	\end{minipage}
 \end{center} 
 
-\subsection{Algumas Classificações Importantes}
+\subsection{Outras Definições Importantes}
 
-Existem duas definições de extrema importância para o nosso problema molecular (tema central desse texto): o conceito de grafo completo e o de estruturas $k$-cliques. Porém, seremos obrigado a definir alguns outros conceitos prévios, como segue. 
+Dizemos que um grafo $G$ é \textit{rotulado} quando podemos distinguir seus $m$ vértices, nomeando eles, algo como $v_1, v_2, \dots, v_m$. Por exemplo, os grafos da Figura~\ref{fig:graphisomorphic} são rotulados, enquanto o grafo da Figura~\ref{fig:pseudograph} não é.
 
+Dois grafos $G = (V_G, E_G)$ e $H = (V_H, E_H)$ são ditos isomorfos (escreve-se $G \cong H$) quando existe uma correspondência biunívoca entre os conjuntos de vértices $V_G$ e $V_H$ que preserve suas adjacências. A Figura~\ref{fig:graphisomorphic} ilustra essa situação, com a correspondência $v_i \longleftrightarrow v_i$.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.6\linewidth]{graphisomorphic.png}
+	\end{center}
+	\caption{Diferentes representações isomórficas de um (6, 9) grafo.}
+	\label{fig:graphisomorphic}
+\end{figure}
+
+O isomorfismo é uma relação de equivalência em grafos. Fica claro que, por mais que seja útil, a representação gráfica de um grafo existe apenas como um apelo didático. A geometria formada pelos vértices é escolha de quem desenha. Vários são os casos em que problemas envolvendo grafos são facilmente solucionáveis apenas rearranjando a forma como se desenha. A resposta salta aos olhos.
 
 \begin{center}
 	\begin{minipage}{0.9 \linewidth}
