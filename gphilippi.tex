@@ -31,10 +31,10 @@
 \tableofcontents
 
 \section{Teoria de Grafos\label{sec:grafos}}
-Esta seção tem como objetivo apresentar um breve resumo da \textit{teoria de grafos}, tema muito estudado por diversos matemáticos e aplicado em diversas áreas do conhecimento \cite{GraphTheoryApplicationsBondy}.
+Esta seção tem como objetivo apresentar um breve resumo da \textit{teoria de grafos}, tema muito estudado por diversos matemáticos e aplicado em diversas áreas do conhecimento \cite{graphTheoryApplicationsBondy}.
 
 \subsection{Descoberta (Eureka!)}
-Costuma-se dizer que em 1736 é que a teoria teve início, com base no artigo publicado por Leonhard Euler sobre as 7 pontes de Königsberg \cite{euler:KOENIGSBERG} \cite{GraphTheoryApplicationsBondy}, representada na Figura~\ref{fig:koni}. Esse é um problema muito usado para introduzir o tema didaticamente --- propõe-se o desafio de ligar todos os pontos de um desenho sem tirar o lápis do papel e sem passar duas vezes no mesmo ponto. Segundo a história, os moradores daquela região perguntavam-se sobre a possibilidade de atravessar todas as sete pontes do local sem ter que repetir alguma delas. Euler provou que isso não era possível ao formular matematicamente o problema, que deu origem a esta teoria.
+Costuma-se dizer que em 1736 é que a teoria teve início, com base no artigo publicado por Leonhard Euler sobre as 7 pontes de Königsberg \cite{euler:KOENIGSBERG} \cite{graphTheoryApplicationsBondy}, representada na Figura~\ref{fig:koni}. Segundo a história, os moradores daquela região perguntavam-se sobre a possibilidade de atravessar todas as sete pontes do local sem ter que repetir alguma delas. Esse é um problema muito usado para introduzir o tema --- propõe-se o desafio de ligar todos os pontos de um desenho sem tirar o lápis do papel e sem passar duas vezes no mesmo ponto. Euler provou que isso não era possível ao formular matematicamente o problema, que deu origem a esta teoria.
 
 \begin{figure}[H]
 	\begin{center}
@@ -44,11 +44,11 @@ Costuma-se dizer que em 1736 é que a teoria teve início, com base no artigo pu
 	\label{fig:koni}
 \end{figure}
 
-A grande ideia de Euler foi abstrair o problema, vê-lo de uma forma elementar, como um conjunto de pontos conectados por curvas (representado por um "gráfico", conforme Figura~\ref{fig:koniGrafo}). Essa representação facilita a análise e a busca por uma solução. Logo Euler percebeu que só seria possível solucionar o problema se houvessem exatamente nenhum ou apenas dois pontos conectados por um número impar de curvas (ou pontes) \cite{euler:KOENIGSBERG}. Note que o caso de Koenigsberg não respeita essa característica.
+A grande ideia de Euler foi abstrair o problema, vê-lo de uma forma elementar, como um conjunto de pontos conectados por curvas. Isso pode ser representado por um ``gráfico'', conforme a Figura~\ref{fig:koniGrafo} --- é daí a origem do termo em inglês "Graph", que é tradução literal de "Gráfico". Essa representação facilita a análise e a busca por uma solução. Com isso, Euler percebeu que só seria possível solucionar o problema se houvessem exatamente nenhum ou apenas dois pontos conectados por um número impar de curvas (ou pontes) \cite{euler:KOENIGSBERG}. Note que o caso de Koenigsberg, por tanto, não possui solução.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.35\linewidth]{koenigsbernGrafo.png}
+		\includegraphics[width=0.32\linewidth]{koenigsbernGrafo.png}
 	\end{center}
 	\caption{Representação em Grafos da ponte de Koenigsberg.}
 	\label{fig:koniGrafo}
@@ -59,23 +59,51 @@ Mas não podemos deixar todo o mérito com Euler. O conceito de grafo é muito i
 Além dessas, muitas outras situações reais podem ser convenientemente representadas por simples diagramas contendo um conjunto de pontos e um conjunto de relações entre pares desses pontos. Por exemplo, podemos definir o conjunto $P = \{a,b,c\}$ das pessoas $a, b$ e $c$ e um conjunto $A = \{\{a,b\}, \{b,c\}\}$ como o conjunto de amizades entre essas pessoas --- no caso, $a$ é amigo de $b$, que é amigo de $c$, porém $a$ não é amigo de $c$. 
 Este exemplo se torna muitíssimo útil quando se deseja estudar como a informação se propaga em redes sociais.
 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.35\linewidth]{socialGraph.png}
+	\end{center}
+	\caption{Grafo representando o exemplo dado.}
+	\label{fig:socialGraph}
+\end{figure}
+
 \subsection{Definição}
 
-Não há um forte consenso sobre as terminologias usadas pelos autores quando se define sobre grafos \cite{graphTheoryFHarary}. Essa confusão é tanto gerada pela vasta disseminação da teoria em diversas áreas como pela enorme abstração que ela carrega. Cayley poderia chamar as relações entre pontos de ligações químicas enquanto Kirchhoff chamaria de curto-circuitos.
+Não há um forte consenso sobre as terminologias usadas pelos autores sobre grafos \cite{graphTheoryFHarary}. Essa confusão é tanto gerada pela sua vasta disseminação em diversas áreas como pela enorme abstração que ela carrega. Cayley poderia chamar as relações entre pontos de ligações químicas enquanto Kirchhoff chamaria de curto-circuitos.
+Faremos aqui um apanhado de definições sobre a teoria de grafos, mas não sobre toda ela. Essa é uma grande área da matemática e não nos cabe aborda-lá completamente. Trata-se apenas do essencial para que o leitor possa progredir sem ter que consultar uma bibliografia complementar sobre grafos.
 
-Fazer-se-há aqui um apanhado de definições sobre a teoria de grafos, mas não sobre toda ela. Essa é uma grande área da matemática e não nos cabe aborda-lá completamente aqui. Trata-se apenas do essencial para que o leitor possa progredir sem ter que consultar uma bibliografia complementar sobre grafos.
+Segue a definição geral.
 
 \begin{center}
 	\begin{minipage}{0.9 \linewidth}
-		\textbf{Grafo:} Um grafo $G$ é uma tripla ordenada da forma $(V(G),E(G), \psi_{G})$, composto por um conjunto de \textit{vértices} $V(G)$, de arestas $E(G)$ e uma \textit{função de incidência} $\psi_{G}$ que, por sua vez, associa a cada aresta de $V(G)$ um par não ordenado de vértices (nem sempre distintos) de $E(G)$. Costumamos dizer que as arestas ligam os vértices.
+		\textbf{Definição:} Um \textit{grafo} $G$ é uma tripla da forma $(V_G,E_G, \psi_{G})$, composta por um \textit{conjunto de vértices} $V_G$, um \textit{conjunto de arestas} $E_G$ e uma \textit{função de incidência} $\psi_{G}$ que, por sua vez, associa a cada elemento de $E_G$ um par não ordenado de elementos (nem sempre distintos) de $V_G$.
 	\end{minipage}
-\end{center}
+\end{center} 
 
-Existe, também, uma íntima relação entre Grafos e algoritmos. De fato, podemos inclusive representar um algoritmo por um grafo \cite{grafos0}. Na verdade, a definição de grafos é tão abrangente que podemos ver suas ligações com diversas áreas do conhecimento. 
+Nesse texto, porém, iremos abstrair a função de incidência $\psi_G$, pois entende-se que o conjunto de arestas $E_G$ é tal que, se $e \in E_G$, então $e = \{a, b\}$ onde $a, b \in V_G$. Fica implícita, por tanto, a associação dos elementos de  $E_G$ e $V_G$.
+\\
 
-Daí vem o seu nome em inglês: "Graph", que, em tradução livre, é "gráfico"
+A literatura utiliza termos distintos para os elementos de $V_G$ e $E_G$ \cite{graphTheoryFHarary}. Procuraremos nos referir a eles por \textit{vértices} e \textit{arestas}, respectivamente. Também, para um elemento $e \in E_G$, onde $e = \{u, v\}$, dizemos que $u$ e $v$ são \textit{vértices adjacentes}. Também dizemos que $u$ e $e$ são \textit{incidentes}, assim como $v$ e $e$. Se duas arestas distintas $e_1$ e $e_2$ são incidentes com um vértice em comum, dizemos que $e_1$ e $e_2$ são \textit{arestas adjacentes}. Seja um grafo com $m$ vértices e $n$ arestas, dizemos que este é um $(m, n)$ \textit{grafo}. Define-se o $(1,0)$ grafo como \textit{trivial}.
 
-No que se segue, definiremos algumas características elementares que serão utilizadas durante esse texto. Para um estudo mais completo sobre essa teoria, vide \cite{grafos1} e \cite{grafosPremioElon}.
+Utilizemos o recurso gráfico como ilustração: No $(3,2)$ grafo da Figura~\ref{fig:socialGraph}, os vértices $a$ e $b$ são adjacentes, assim como as arestas $\{a, b\}$ e $\{b, c\}$. Porém, os vértices $a$ e $c$ não são.
+
+Existem muitas variações de grafos \cite{graphTheoryFHarary}. Perceba que a definição de grafo permite \textit{loops} (uma aresta da forma $e = \{v,v\}$, ou seja, $v$ é adjacente a si mesmo) e \textit{múltiplas arestas} (mais do que uma aresta ligando dois vértices). Grafos que permitem múltiplas arestas, mas não loops, são chamados de \textit{multigrafos}. Caso também permitam os loops, os chamamos de \textit{pseudografos}. Na Figura~\ref{fig:koniGrafo} (representando o problema das pontes de Koenigsberg) temos um multigrafo e a Figura~\ref{fig:pseudograph} ilustra um pseudografo.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.28\linewidth]{pseudograph.png}
+	\end{center}
+	\caption{Exemplo de pseudografo contendo 5 vértices e 6 arestas.}
+	\label{fig:pseudograph}
+\end{figure}
+
+Nesse trabalho, não nos interessa o estudo de multigrafos ou pseudografos. Por isso adotaremos uma definição alternativa para grafos, visando restringir nossa aplicação, como segue:
+
+\begin{center}
+	\begin{minipage}{0.9 \linewidth}
+		\textbf{Definição (2.0):} Um \textit{grafo} $G$ é uma dupla da forma $(V_G,E_G)$, composta por um conjunto não nulo e finito $V_G$ e outro conjunto finito $E_G$ de pares não ordenados de elementos \textbf{distintos} pertencentes a $V_G$.
+	\end{minipage}
+\end{center} 
 
 \subsection{Algumas Classificações Importantes}
 

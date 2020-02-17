@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.3)  13 FEB 2020 11:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.3)  17 FEB 2020 12:15
 entering extended mode
 **./gphilippi.tex
 (gphilippi.tex
@@ -1066,30 +1066,101 @@ LaTeX Font Info:    Redeclaring math delimiter \llcorner on input line 76.
 LaTeX Font Info:    Redeclaring math delimiter \lrcorner on input line 77.
 LaTeX Font Info:    Redeclaring math symbol \square on input line 141.
 LaTeX Font Info:    Redeclaring math symbol \lozenge on input line 142.
-) (gphilippi.aux)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithm2e\algori
+thm2e.sty"
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count148
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip47
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpag
+e.sty"
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count149
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\xspace.sty"
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\relsize\relsize.st
+y"
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip48
+\skiplinenumber=\skip49
+\skiprule=\skip50
+\skiphlne=\skip51
+\skiptext=\skip52
+\skiplength=\skip53
+\algomargin=\skip54
+\skipalgocfslide=\skip55
+\algowidth=\dimen256
+\inoutsize=\dimen257
+\inoutindent=\dimen258
+\interspacetitleruled=\dimen259
+\interspacealgoruled=\dimen260
+\interspacetitleboxruled=\dimen261
+\algocf@ruledwidth=\skip56
+\algocf@inoutbox=\box46
+\algocf@inputbox=\box47
+\AlCapSkip=\skip57
+\AlCapHSkip=\skip58
+\algoskipindent=\skip59
+\algocf@nlbox=\box48
+\algocf@hangingbox=\box49
+\algocf@untilbox=\box50
+\algocf@skipuntil=\skip60
+\algocf@capbox=\box51
+\algocf@lcaptionbox=\skip61
+\algoheightruledefault=\skip62
+\algoheightrule=\skip63
+\algotitleheightruledefault=\skip64
+\algotitleheightrule=\skip65
+\c@algocfline=\count150
+\c@algocfproc=\count151
+\c@algocf=\count152
+\algocf@algoframe=\box52
+\algocf@algobox=\box53
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algorit
+hmic.sty"
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count153
+\c@ALC@line=\count154
+\c@ALC@rem=\count155
+\c@ALC@depth=\count156
+\ALC@tlm=\skip66
+\algorithmicindent=\skip67
+)
+\c@definicao=\count157
+\c@teorema=\count158
+ (gphilippi.aux)
 \openout1 = `gphilippi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 29.
 
 ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1125,8 +1196,8 @@ LaTeX Font Info:    ... okay on input line 24.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box46
-Package hyperref Info: Link coloring OFF on input line 24.
+\AtBeginShipoutBox=\box54
+Package hyperref Info: Link coloring OFF on input line 29.
 
 ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
@@ -1136,11 +1207,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count148
+\c@section@level=\count159
 )
-LaTeX Info: Redefining \ref on input line 24.
-LaTeX Info: Redefining \pageref on input line 24.
-LaTeX Info: Redefining \nameref on input line 24.
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
  (gphilippi.out) (gphilippi.out)
 \@outlinefile=\write4
 \openout4 = `gphilippi.out'.
@@ -1149,16 +1220,16 @@ LaTeX Info: Redefining \nameref on input line 24.
 ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count149
-\scratchdimen=\dimen256
-\scratchbox=\box47
-\nofMPsegments=\count150
-\nofMParguments=\count151
+\scratchcounter=\count160
+\scratchdimen=\dimen262
+\scratchbox=\box55
+\nofMPsegments=\count161
+\nofMParguments=\count162
 \everyMPshowfont=\toks42
-\MPscratchCnt=\count152
-\MPscratchDim=\dimen257
-\MPnumerator=\count153
-\makeMPintoPDFobject=\count154
+\MPscratchCnt=\count163
+\MPscratchDim=\dimen263
+\MPnumerator=\count164
+\makeMPintoPDFobject=\count165
 \everyMPtoPDFconversion=\toks43
 )
 ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
@@ -1183,22 +1254,22 @@ Package caption Info: End \AtBeginDocument code.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
 your preamble.
- on input line 24.
+ on input line 29.
 
-LaTeX Font Info:    Try loading font information for U+wasy on input line 26.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 31.
 ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\wasysym\uwasy.fd"
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+esvect on input line 26.
+LaTeX Font Info:    Try loading font information for U+esvect on input line 31.
 
 ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\esvect\uesvect.fd"
 File: uesvect.fd 
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 26.
+LaTeX Font Info:    Try loading font information for U+msa on input line 31.
  ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 26.
+LaTeX Font Info:    Try loading font information for U+msb on input line 31.
  ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (gphilippi.toc)
@@ -1208,7 +1279,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <koenigsbern.png, id=35, 352.31625pt x 221.32687pt>
 File: koenigsbern.png Graphic file (type png)
 <use koenigsbern.png>
-Package pdftex.def Info: koenigsbern.png  used on input line 36.
+Package pdftex.def Info: koenigsbern.png  used on input line 41.
 (pdftex.def)             Requested size: 298.75264pt x 187.67616pt.
  [1
 
@@ -1216,36 +1287,45 @@ Package pdftex.def Info: koenigsbern.png  used on input line 36.
 <koenigsbernGrafo.png, id=57, 104.5506pt x 121.53406pt>
 File: koenigsbernGrafo.png Graphic file (type png)
 <use koenigsbernGrafo.png>
-Package pdftex.def Info: koenigsbernGrafo.png  used on input line 46.
-(pdftex.def)             Requested size: 149.37958pt x 173.64958pt.
+Package pdftex.def Info: koenigsbernGrafo.png  used on input line 51.
+(pdftex.def)             Requested size: 136.57635pt x 158.7657pt.
  [2 <./koenigsbern.png> <./koenigsbernGrafo.png>]
+<socialGraph.png, id=70, 103.22565pt x 37.45995pt>
+File: socialGraph.png Graphic file (type png)
+<use socialGraph.png>
+Package pdftex.def Info: socialGraph.png  used on input line 64.
+(pdftex.def)             Requested size: 149.37958pt x 54.21204pt.
 
-LaTeX Warning: Citation `grafos1' on page 3 undefined on input line 71.
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
 
-<grafocompleto.png, id=74, 1027.84pt x 1027.84pt>
+ []
+
+[3 <./socialGraph.png>]
+<pseudograph.png, id=90, 59.0205pt x 49.6254pt>
+File: pseudograph.png Graphic file (type png)
+<use pseudograph.png>
+Package pdftex.def Info: pseudograph.png  used on input line 94.
+(pdftex.def)             Requested size: 119.50105pt x 100.4863pt.
+<grafocompleto.png, id=91, 1027.84pt x 1027.84pt>
 File: grafocompleto.png Graphic file (type png)
 <use grafocompleto.png>
-Package pdftex.def Info: grafocompleto.png  used on input line 101.
+Package pdftex.def Info: grafocompleto.png  used on input line 136.
 (pdftex.def)             Requested size: 170.71393pt x 170.69981pt.
-[3] (gphilippi.bbl [4 <./grafocompleto.png>]) [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 135.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 135.
+ [4 <./pseudograph.png>] (gphilippi.bbl) [5 <./grafocompleto.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
  (gphilippi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 135.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 135.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 170.
 Package rerunfilecheck Info: File `gphilippi.out' has not changed.
-(rerunfilecheck)             Checksum: 142D20F3D65AECDF893A33074F6457EF;330.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
+(rerunfilecheck)             Checksum: 188C38E6EFDF819DC9DF4838657D7B78;330.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 170.
  ) 
 Here is how much of TeX's memory you used:
- 30064 strings out of 492970
- 700686 string characters out of 3126594
- 918680 words of memory out of 3000000
- 33382 multiletter control sequences out of 15000+200000
+ 31181 strings out of 492970
+ 718535 string characters out of 3126594
+ 919680 words of memory out of 3000000
+ 34475 multiletter control sequences out of 15000+200000
  27730 words of font info for 90 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,6n,96p,864b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1268,10 +1348,11 @@ Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Us
 ers/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
 8.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmr12.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/amsfonts/symbols/msbm10.pfb>
-Output written on gphilippi.pdf (5 pages, 361060 bytes).
+/public/amsfonts/cm/cmr8.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on gphilippi.pdf (5 pages, 395728 bytes).
 PDF statistics:
- 397 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
- 68 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 419 PDF objects out of 1000 (max. 8388607)
+ 25 named destinations out of 1000 (max. 500000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 
