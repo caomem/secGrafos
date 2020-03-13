@@ -34,7 +34,7 @@
 Esta seção tem como objetivo apresentar um breve resumo da \textit{teoria de grafos}, tema muito estudado por diversos matemáticos e aplicado em diversas áreas do conhecimento \cite{graphTheoryApplicationsBondy}.
 
 \subsection{Descoberta (Eureka!)}
-Costuma-se dizer que em 1736 é que a teoria teve início, com base no artigo publicado por Leonhard Euler sobre as 7 pontes de Königsberg \cite{euler:KOENIGSBERG} \cite{graphTheoryApplicationsBondy}, representada na Figura~\ref{fig:koni}. Segundo a história, os moradores daquela região perguntavam-se sobre a possibilidade de atravessar todas as sete pontes do local sem ter que repetir alguma delas. Esse é um problema muito usado para introduzir o tema --- propõe-se o desafio de ligar todos os pontos de um desenho sem tirar o lápis do papel e sem passar duas vezes no mesmo ponto. Euler provou que isso não era possível ao formular matematicamente o problema, que deu origem a esta teoria.
+Costuma-se dizer que em 1736 é que a teoria teve início, com base no artigo publicado por Leonhard Euler sobre as 7 pontes de Königsberg \cite{euler:KOENIGSBERG} \cite{graphTheoryApplicationsBondy}, representada na Figura~\ref{fig:koni}. Segundo a história, os moradores daquela região perguntavam-se sobre a possibilidade de atravessar todas as sete pontes do local sem ter que repetir alguma delas. Esse é um problema muito usado para introduzir o tema \cite{problemsInMath} --- propõe-se o desafio de ligar todos os pontos de um desenho sem tirar o lápis do papel e sem passar duas vezes no mesmo ponto. Euler provou que isso não era possível ao formular matematicamente o problema, que deu origem a esta teoria.
 
 \begin{figure}[H]
 	\begin{center}
@@ -54,7 +54,7 @@ A grande ideia de Euler foi abstrair o problema, vê-lo de uma forma elementar, 
 	\label{fig:koniGrafo}
 \end{figure}
 
-Mas não podemos deixar todo o mérito com Euler. O conceito de grafo é muito intuitivo e foi proposto por diversas mentes brilhantes como formas de solucionar problemas que, em sua essência, são muito parecidos. Após Euler, a teoria foi redescoberta por Kirchhoff e Cayley \cite{graphTheoryFHarary}. Kirchhoff desenvolveu a teoria por volta de 1847, enquanto solucionava sistemas de equações lineares que relacionavam as correntes que passavam em cada malha fechada de um circuito elétrico \cite{kirchhoff1847ueber}, seguido por Cayley, em 1857, que estudava diferentes estruturas em bioquímica formadas por carbonos (sempre com quatro ligações químicas) e hidrogênios (com apenas uma ligação), onde conseguiu formular seu problema introduzindo o conceito de \textit{árvore} em grafos \cite{cayley1897theory}.  
+Mas não podemos deixar todo o mérito com Euler. O conceito de grafo é muito intuitivo e foi proposto por diversas mentes brilhantes como formas de solucionar problemas que, em essência, são muito parecidos. Após Euler, a teoria foi redescoberta por Kirchhoff e Cayley \cite{graphTheoryFHarary}. Kirchhoff desenvolveu a teoria por volta de 1847, enquanto solucionava sistemas de equações lineares que relacionavam as correntes que passavam em cada malha fechada de um circuito elétrico \cite{kirchhoff1847ueber}, seguido por Cayley, em 1857, que estudava diferentes estruturas em bioquímica formadas por carbonos (sempre com quatro ligações químicas) e hidrogênios (com apenas uma ligação), onde conseguiu formular seu problema introduzindo o conceito de \textit{árvore} em grafos \cite{cayley1897theory}.  
 
 Além dessas, muitas outras situações reais podem ser convenientemente representadas por simples diagramas contendo um conjunto de pontos e um conjunto de relações entre pares desses pontos. Por exemplo, podemos definir o conjunto $P = \{a,b,c\}$ das pessoas $a, b$ e $c$ e um conjunto $A = \{\{a,b\}, \{b,c\}\}$ como o conjunto de amizades entre essas pessoas --- no caso, $a$ é amigo de $b$, que é amigo de $c$, porém $a$ não é amigo de $c$. 
 Este exemplo se torna muitíssimo útil quando se deseja estudar como a informação se propaga em redes sociais.
@@ -121,6 +121,16 @@ Dois grafos $G = (V_G, E_G)$ e $H = (V_H, E_H)$ são ditos isomorfos (escreve-se
 
 O isomorfismo é uma relação de equivalência em grafos. Fica claro que, por mais que seja útil, a representação gráfica de um grafo existe apenas como um apelo didático. A geometria formada pelos vértices é escolha de quem desenha. Vários são os casos em que problemas envolvendo grafos são facilmente solucionáveis apenas rearranjando a forma como se desenha. A resposta salta aos olhos.
 
+\subsubsection*{Subgrafos}
+
+Dizemos que o grafo $G_1 = (V_{G_1}, E_{G_1})$ é \textit{subgrafo} de $G = (V_G, E_G)$ se $V_{G_1} \subset V_G$ e $E_{G_1} \subset E_G$. Se $G_1$ é subgrafo de $G$, então $G$ é \textit{supergrafo} de $G_1$. Para qualquer $V \subset V_G$, existe um \textit{subgrafo induzido} $\langle V \rangle$ definido por $(V, E)$, onde $E \subset E_G$ contém todas as arestas $(v_1, v_2) \in E_G$ tal que $v_1, v_2 \in V$. 
+Fica claro que dois vértices em $\langle V \rangle$ são adjacentes se, e somente se, forem também adjacentes em $G$.
+
+Pode-se \textit{remover um vértice} $v$ de um grafo $G = (V_G, E_G)$, que resulta no subgrafo induzido $G - v = \langle V_G- v\rangle$. Da mesma forma, pode-se \textit{remover uma aresta} $e$ de um grafo $G = (V_G, E_G)$, resultando no grafo $G-e = (V_G, E_G - e)$.
+
+\subsubsection*{Caminhos}
+
+ 
 \begin{center}
 	\begin{minipage}{0.9 \linewidth}
 		\textbf{Laço:} Uma aresta $\{e_i, e_j\} \in E$ tal que $i = j$.

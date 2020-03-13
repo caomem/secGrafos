@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.3)  17 FEB 2020 18:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.3)  4 MAR 2020 06:20
 entering extended mode
 **./gphilippi.tex
 (gphilippi.tex
@@ -1276,7 +1276,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write5
 \openout5 = `gphilippi.toc'.
 
-<koenigsbern.png, id=35, 352.31625pt x 221.32687pt>
+<koenigsbern.png, id=36, 352.31625pt x 221.32687pt>
 File: koenigsbern.png Graphic file (type png)
 <use koenigsbern.png>
 Package pdftex.def Info: koenigsbern.png  used on input line 41.
@@ -1284,13 +1284,13 @@ Package pdftex.def Info: koenigsbern.png  used on input line 41.
  [1
 
 {C:/Users/Bruno/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<koenigsbernGrafo.png, id=57, 104.5506pt x 121.53406pt>
+<koenigsbernGrafo.png, id=59, 104.5506pt x 121.53406pt>
 File: koenigsbernGrafo.png Graphic file (type png)
 <use koenigsbernGrafo.png>
 Package pdftex.def Info: koenigsbernGrafo.png  used on input line 51.
 (pdftex.def)             Requested size: 136.57635pt x 158.7657pt.
  [2 <./koenigsbern.png> <./koenigsbernGrafo.png>]
-<socialGraph.png, id=70, 103.22565pt x 37.45995pt>
+<socialGraph.png, id=72, 103.22565pt x 37.45995pt>
 File: socialGraph.png Graphic file (type png)
 <use socialGraph.png>
 Package pdftex.def Info: socialGraph.png  used on input line 64.
@@ -1301,41 +1301,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--85
  []
 
 [3 <./socialGraph.png>]
-<pseudograph.png, id=90, 59.0205pt x 49.6254pt>
+<pseudograph.png, id=92, 59.0205pt x 49.6254pt>
 File: pseudograph.png Graphic file (type png)
 <use pseudograph.png>
 Package pdftex.def Info: pseudograph.png  used on input line 94.
 (pdftex.def)             Requested size: 119.50105pt x 100.4863pt.
-<graphisomorphic.png, id=94, 167.1846pt x 64.8021pt>
+<graphisomorphic.png, id=96, 167.1846pt x 64.8021pt>
 File: graphisomorphic.png Graphic file (type png)
 <use graphisomorphic.png>
 Package pdftex.def Info: graphisomorphic.png  used on input line 116.
 (pdftex.def)             Requested size: 256.07741pt x 99.27342pt.
  [4 <./pseudograph.png> <./graphisomorphic.png>]
-<grafocompleto.png, id=104, 1027.84pt x 1027.84pt>
+<grafocompleto.png, id=107, 1027.84pt x 1027.84pt>
 File: grafocompleto.png Graphic file (type png)
 <use grafocompleto.png>
-Package pdftex.def Info: grafocompleto.png  used on input line 147.
+Package pdftex.def Info: grafocompleto.png  used on input line 157.
 (pdftex.def)             Requested size: 170.71393pt x 170.69981pt.
 
-(gphilippi.bbl [5 <./grafocompleto.png>]) [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 181.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 181.
+[5 <./grafocompleto.png>] (gphilippi.bbl) [6]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 191.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
  (gphilippi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 181.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 181.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 191.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
 Package rerunfilecheck Info: File `gphilippi.out' has not changed.
-(rerunfilecheck)             Checksum: 46D18F9D2045D70C629C459EBECFD627;325.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 181.
+(rerunfilecheck)             Checksum: DAAA7BAC022ED8275799ABC68076C6C3;326.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 191.
  ) 
 Here is how much of TeX's memory you used:
- 31185 strings out of 492970
- 718632 string characters out of 3126594
- 919680 words of memory out of 3000000
- 34478 multiletter control sequences out of 15000+200000
+ 31189 strings out of 492970
+ 718690 string characters out of 3126594
+ 919679 words of memory out of 3000000
+ 34479 multiletter control sequences out of 15000+200000
  27730 words of font info for 90 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,6n,96p,864b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,6n,96p,860b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/mnsymbol/Mn
 SymbolC.enc}{C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/m
 nsymbol/MnSymbolA.enc}{C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/e
@@ -1355,11 +1355,12 @@ Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Us
 ers/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
 8.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmr12.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr8.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on gphilippi.pdf (6 pages, 444552 bytes).
+/public/amsfonts/cm/cmr6.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Bruno/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on gphilippi.pdf (6 pages, 455621 bytes).
 PDF statistics:
- 422 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
+ 434 PDF objects out of 1000 (max. 8388607)
+ 28 named destinations out of 1000 (max. 500000)
  83 words of extra memory for PDF output out of 10000 (max. 10000000)
 
