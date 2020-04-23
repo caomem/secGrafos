@@ -83,10 +83,13 @@ O ideal é começar pela definição geral.
 Nesse texto, porém, abstraiu-se a função de incidência $\psi_G$ pois entende-se que o conjunto de arestas $E_G$ é tal que, se $e \in E_G$, então $e = \{a, b\}$ onde $a, b \in V_G$. Fica implícita, por tanto, a associação dos elementos de  $V_G$ e $E_G$.
 \\
 
-Aos elementos desses conjuntos ($V_G$ e $E_G$), refere-se-os por \textit{vértices} e \textit{arestas}. Também, para um elemento $e \in E_G$, onde $e = \{u, v\}$, diz-se que $u$ e $v$ são \textit{vértices adjacentes}. Chama-se $u$ e $e$ de \textit{incidentes}, assim como $v$ e $e$. Se duas arestas distintas $e_1$ e $e_2$ são incidentes com um vértice em comum, diz-se que $e_1$ e $e_2$ são \textit{arestas adjacentes}. Seja um grafo com $m$ vértices e $n$ arestas, dizer-se-há que este é um $(m, n)$ \textit{grafo}. Isto é, a Figura~\ref{fig:socialGraph}, para ilustrar, contém um $(3,2)$ grafo onde os vértices $a$ e $b$ são adjacentes, assim como as arestas $\{a, b\}$ e $\{b, c\}$, porém, os vértices $a$ e $c$ não são.
-Define-se o $(1,0)$ grafo como \textit{trivial}.
+Aos elementos desses conjuntos ($V_G$ e $E_G$), refere-se-os por \textit{vértices} e \textit{arestas}. Também, para um elemento $e \in E_G$, onde $e = \{u, v\}$, diz-se que $u$ e $v$ são \textit{vértices adjacentes}. Chama-se $u$ e $e$ de \textit{incidentes}, assim como $v$ e $e$. À quantidade de vértices adjacentes a $v$ da-se o nome \textit{grau} de $v$. Se duas arestas distintas $e_1$ e $e_2$ são incidentes com um vértice em comum, diz-se que $e_1$ e $e_2$ são \textit{arestas adjacentes}. 
 
-Existem muitas variações de grafos \cite{graphTheoryFHarary}. Perceba que a definição de grafo permite \textit{loops} (uma aresta da forma $e = \{v,v\}$, ou seja, $v$ é adjacente a si mesmo) e \textit{múltiplas arestas} (mais do que uma aresta ligando dois vértices). Grafos que não permitem múltiplas arestas ou loops são ditos \textit{simples}. Grafos que permitem múltiplas arestas, mas não loops, são chamados de \textit{multigrafos}. Caso também permitam os loops, os chamamos de \textit{pseudografos}. Na Figura~\ref{fig:koniGrafo} (do problema das pontes de Köenigsberg) temos um multigrafo e na Figura~\ref{fig:pseudograph} um pseudografo.
+Seja um grafo com $m$ vértices e $n$ arestas, dizer-se-há que este é um $(m, n)$ \textit{grafo}. Isto é, a Figura~\ref{fig:socialGraph}, para ilustrar, contém um $(3,2)$ grafo onde os vértices $a$ e $b$ são adjacentes, assim como as arestas $\{a, b\}$ e $\{b, c\}$, porém, os vértices $a$ e $c$ não são.
+Define-se o $(1,0)$ grafo como \textit{trivial}.
+\\
+
+Existem muitas variações de grafos \cite{graphTheoryFHarary}. Perceba que a definição de grafo permite \textit{loops} (também chamado de \textit{laço}, é uma aresta da forma $e = \{v,v\}$, ou seja, $v$ é adjacente a si mesmo) e \textit{múltiplas arestas} (mais do que uma aresta ligando os mesmos dois vértices). Grafos que não permitem múltiplas arestas ou loops são ditos \textit{simples}. Grafos que permitem múltiplas arestas, mas não loops, são chamados de \textit{multigrafos}. Caso também permitam os loops, os chamamos de \textit{pseudografos}. Na Figura~\ref{fig:koniGrafo} (do problema das pontes de Köenigsberg) temos um multigrafo e na Figura~\ref{fig:pseudograph} um pseudografo.
 
 \begin{figure}[H]
 	\begin{center}
@@ -106,9 +109,9 @@ Porém, para esse trabalho não interessa o estudo de multigrafos ou pseudografo
 
 \subsection{Outras Definições Importantes}
 
-Diz-se que um grafo $G$ é \textit{rotulado} quando pode-se distinguir seus $m$ vértices ao nomeá-los --- algo como $v_1, v_2, \dots, v_m$. Por exemplo, os grafos da Figura~\ref{fig:graphisomorphic} são rotulados, enquanto o grafo da Figura~\ref{fig:pseudograph} não é.
+Diz-se que um grafo $G$ é \textit{rotulado} quando pode-se distinguir seus $m$ vértices ao nomeá-los --- algo como $v_1, v_2, \dots, v_m$. Por exemplo, os grafos da Figura~\ref{fig:graphisomorphic} são rotulados, enquanto o grafo da Figura~\ref{fig:pseudograph} não é. 
 
-Dois grafos $G = (V_G, E_G)$ e $H = (V_H, E_H)$ são ditos isomorfos (escreve-se $G \cong H$) quando existe uma correspondência biunívoca entre os conjuntos de vértices $V_G$ e $V_H$ que preserve suas adjacências. A Figura~\ref{fig:graphisomorphic} ilustra essa situação, com a correspondência $v_i \longleftrightarrow v_i$.
+Dois grafos $G = (V_G, E_G)$ e $H = (V_H, E_H)$ são ditos \textit{isomorfos} (escreve-se $G \cong H$) quando existe uma correspondência biunívoca entre os conjuntos de vértices $V_G$ e $V_H$ que preserve suas adjacências. A Figura~\ref{fig:graphisomorphic} ilustra essa situação, com a correspondência $v_i \longleftrightarrow v_i$.
 
 \begin{figure}[H]
 	\begin{center}
@@ -129,7 +132,7 @@ Pode-se \textit{remover um vértice} $v$ de um grafo $G = (V_G, E_G)$, que resul
 
 \subsubsection*{Caminhos}
 
-Seja $G$ um $(m, n)$ grafo rotulado. Um \textit{caminho} $C$ \textit{em} $G$ é uma sequência finita não nula $C = v_0e_1v_1e_2v_2\dots e_mv_m$
+Seja $G = (V_G, E_G)$ um grafo rotulado. Um \textit{passeio} $P$ \textit{em} $G$ é uma sequência dos vértices de $V_G$ finita e não nula $P = v_0,\dots, v_i, \dots, v_k$ tal que, para $i, k\in\mathbf{Z}$ e $0\le i \le |k-1|$, sempre exista $(v_i,v_{i+1}) \in E_G$.
 
 \begin{center}
 	\begin{minipage}{0.9 \linewidth}
