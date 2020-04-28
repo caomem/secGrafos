@@ -128,7 +128,7 @@ O isomorfismo é uma relação de equivalência em grafos. Fica claro que, por m
 Diz-se que o grafo $G_1 = (V_{G_1}, E_{G_1})$ é \textit{subgrafo} de $G = (V_G, E_G)$ se $V_{G_1} \subset V_G$ e $E_{G_1} \subset E_G$. Se $G_1$ é subgrafo de $G$, então $G$ é \textit{supergrafo} de $G_1$. Para qualquer $V \subset V_G$, existe um \textit{subgrafo induzido} $\langle V \rangle$ definido por $(V, E)$, onde $E \subset E_G$ contém todas as arestas $(v_1, v_2) \in E_G$ tal que $v_1, v_2 \in V$. 
 Fica claro que dois vértices em $\langle V \rangle$ são adjacentes se, e somente se, forem também adjacentes em $G$.
 
-Pode-se \textit{remover um vértice} $v$ de um grafo $G = (V_G, E_G)$, que resulta no subgrafo induzido $G - v = \langle V_G- v\rangle$. Da mesma forma, pode-se \textit{remover uma aresta} $e$ de um grafo $G = (V_G, E_G)$, resultando no grafo $G-e = (V_G, E_G - e)$.
+Pode-se \textit{remover um vértice} $v$ de um grafo $G = (V_G, E_G)$, que resulta no subgrafo induzido $G - v = \langle V_G \setminus \{v\}\rangle$. Da mesma forma, pode-se \textit{remover uma aresta} $e$ de um grafo $G = (V_G, E_G)$, resultando no grafo $G-e = (V_G, E_G \setminus \{e\})$.
 
 \subsubsection*{Caminhos}
 
