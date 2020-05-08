@@ -1,35 +1,3 @@
- \documentclass[a4paper,12pt]{article}
-\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
-\usepackage[brazil]{babel}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{MnSymbol}
-\usepackage{wasysym}
-\usepackage{hyperref}
-\usepackage{color}
-\definecolor{Blue}{rgb}{0,0,0.9}
-\definecolor{Red}{rgb}{0.9,0,0}
-\usepackage{esvect}
-\usepackage{graphicx}
-\usepackage{float}
-\usepackage{indentfirst}
-\usepackage{caption}
-\usepackage{blkarray}
-\newcommand\Mark[1]{\textsuperscript#1}
-\usepackage{pgfplots}
-\usepackage{amsfonts}
-\usepackage[english, ruled, linesnumbered]{algorithm2e}
-\usepackage{algorithmic}
-\newtheorem{definicao}{Definição}[section]
-\newtheorem{teorema}{Teorema}[section]
-
-\title{Teoria de Grafos}
-\author{Guilherme Philippi, Felipe Delfini Caetano Fidalgo}
-\begin{document}
-\maketitle
-\tableofcontents
-
 \section{Teoria de Grafos\label{sec:grafos}}
 Esta seção tem como objetivo apresentar um breve resumo da \textit{teoria de grafos}, tema amplamente estudado por diversos matemáticos e aplicado em diversas áreas do conhecimento como computação, engenharia e matemática \cite{graphTheoryApplicationsBondy}.
 
@@ -38,7 +6,7 @@ Costuma-se dizer que a teoria iniciou em 1736, com base no artigo publicado por 
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.6\linewidth]{figures/koenigsbern.png}
+		\includegraphics[width=0.6\linewidth]{secGrafos/figures/koenigsbern.png}
 	\end{center}
 	\caption{Ilustração original do problema \cite{euler:KOENIGSBERG}.}
 	\label{fig:koni}
@@ -48,7 +16,7 @@ A grande ideia de Euler foi abstrair o problema, vê-lo de uma forma elementar, 
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.32\linewidth]{figures/koenigsbernGrafo.png}
+		\includegraphics[width=0.32\linewidth]{secGrafos/figures/koenigsbernGrafo.png}
 	\end{center}
 	\caption{Grafo representando o caso da ponte de Köenigsberg.}
 	\label{fig:koniGrafo}
@@ -61,7 +29,7 @@ Esta análise se torna muitíssimo útil quando se deseja estudar como uma infor
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.35\linewidth]{figures/socialGraph.png}
+		\includegraphics[width=0.35\linewidth]{secGrafos/figures/socialGraph.png}
 	\end{center}
 	\caption{Grafo representando a relação entre as pessoas $\{a, b, c\}$.}
 	\label{fig:socialGraph}
@@ -93,7 +61,7 @@ Existem muitas variações de grafos \cite{graphTheoryFHarary}. Perceba que a de
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.28\linewidth]{figures/pseudograph.png}
+		\includegraphics[width=0.28\linewidth]{secGrafos/figures/pseudograph.png}
 	\end{center}
 	\caption{Exemplo de pseudografo contendo 5 vértices e 6 arestas.}
 	\label{fig:pseudograph}
@@ -115,7 +83,7 @@ Dois grafos $G = (V_G, E_G)$ e $H = (V_H, E_H)$ são ditos \textit{isomorfos} (e
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.6\linewidth]{figures/graphisomorphic.png}
+		\includegraphics[width=0.6\linewidth]{secGrafos/figures/graphisomorphic.png}
 	\end{center}
 	\caption{Diferentes representações isomórficas de um (6, 9) grafo.}
 	\label{fig:graphisomorphic}
@@ -147,7 +115,7 @@ A Figura~\ref{fig:connectGraph} mostra dois grafos: O grafo da esquerda é conec
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.6\linewidth]{figures/connectedGraph.png}
+		\includegraphics[width=0.6\linewidth]{secGrafos/figures/connectedGraph.png}
 	\end{center}
 	\caption{A esquerda um grafo conectado e, a direita, um grafo desconectado}
 	\label{fig:connectGraph}
@@ -160,7 +128,7 @@ Introduze-se agora uma classe especial de grafos \cite{graphTheoryApplicationsBo
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.4\linewidth]{figures/grafocompleto.png}
+		\includegraphics[width=0.4\linewidth]{secGrafos/figures/grafocompleto.png}
 	\end{center}
 	\caption{Diagrama de um grafo completo com 12 vértices ($|V| = 12$).}
 	\label{fig:grafocompleto}
@@ -170,7 +138,7 @@ Em particular, chama-se de \textit{$k$-clique} um grafo $G$ com $k$ vértices ta
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.4\linewidth]{figures/cliques.png}
+		\includegraphics[width=0.4\linewidth]{secGrafos/figures/cliques.png}
 	\end{center}
 	\caption{Em ordem: 2-clique e 3-clique.}
 	\label{fig:cliques}
@@ -184,16 +152,8 @@ Costuma-se definir uma \textit{função ponderação} $d: E \longrightarrow \mat
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.26\linewidth]{figures/weightedGraph.png}
+		\includegraphics[width=0.26\linewidth]{secGrafos/figures/weightedGraph.png}
 	\end{center}
 	\caption{Representação de um grafo ponderado.}
 	\label{fig:weightedGraph}
 \end{figure}
-
-\phantomsection
-\addcontentsline{toc}{section}{Referências}
-
-\bibliographystyle{unsrt}
-\bibliography{references}
-
-\end{document}
