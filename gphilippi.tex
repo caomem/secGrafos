@@ -156,7 +156,7 @@ A Figura~\ref{fig:connectGraph} mostra dois grafos: O grafo da esquerda é conec
 
 \subsubsection{Grafos Completos}
 
-Introduze-se agora uma classe especial de grafos: Um grafo é dito \textit{completo} se possui todas as suas arestas possíveis, i.e., para cada par de vértices distintos $u, v \in V_G$, $u$ é adjacente a $v$ (vide Figura~\ref{fig:grafocompleto}).
+Introduze-se agora uma classe especial de grafos \cite{graphTheoryApplicationsBondy}: Um grafo é dito \textit{completo} se possui todas as suas arestas possíveis, i.e., para cada par de vértices distintos $u, v \in V_G$, $u$ é adjacente a $v$ (vide Figura~\ref{fig:grafocompleto}).
 
 \begin{figure}[H]
 	\begin{center}
@@ -172,21 +172,23 @@ Em particular, chama-se de \textit{$k$-clique} um grafo $G$ com $k$ vértices ta
 	\begin{center}
 		\includegraphics[width=0.4\linewidth]{figures/cliques.png}
 	\end{center}
-	\caption{Em ordem: 2-clique; 3-clique; 4-clique.}
+	\caption{Em ordem: 2-clique e 3-clique.}
 	\label{fig:cliques}
 \end{figure}
 
-\begin{center}
-	\begin{minipage}{0.9 \linewidth}
-		\textbf{$k$-Clique}: é um subgrafo $G^\prime$ com $k$ vértices tal que $G^\prime$ é completo.
-	\end{minipage}
-\end{center}
+\subsection{Grafos Ponderados}
 
-\begin{center}
-	\begin{minipage}{0.9 \linewidth}
-		\textbf{Grafo Ponderado:} É um grafo que possui uma função $d(E) \rightarrow \mathbb{R}$ associada, isto é, o grafo que possui valores numéricos atribuídos as suas arestas.
-	\end{minipage}
-\end{center}
+As arestas $e\in E$ de um grafo $G$ pode estar associadas com um número real $d(e)$, chamado de \textit{peso da aresta $e$} \cite{graphTheoryApplicationsBondy}. Quando $G$ tem todas as suas arestas associadas com pesos, define-se $G$ como um \textit{grafo ponderado}. Grafos ponderados são frequentemente associados com aplicações em teoria de grafos \cite{grafosPremioElon}.
+
+Costuma-se definir uma \textit{função ponderação} $d: E \longrightarrow \mathbb{R}_+$ para mapear o conjunto de arestas $E$ no conjunto dos números reais não negativos $\mathbb{R}_+$ \cite{libertiEDG}. Escreve-se $G = (V_G,E_G,d)$ como um grafo ponderado com o conjunto de vértices $V_G$, arestas $E_G$ e função ponderação $d$.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.26\linewidth]{figures/weightedGraph.png}
+	\end{center}
+	\caption{Representação de um grafo ponderado.}
+	\label{fig:weightedGraph}
+\end{figure}
 
 \phantomsection
 \addcontentsline{toc}{section}{Referências}
