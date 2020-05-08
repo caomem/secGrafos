@@ -145,7 +145,6 @@ Dois vértices $u$ e $v$ de $G$ são ditos \textit{conectados} se existe um $(u,
 
 A Figura~\ref{fig:connectGraph} mostra dois grafos: O grafo da esquerda é conectado --- possui uma única componente $\langle \{v_1,v_2,v_3,v_4\}\rangle$; porém, o da direita não é --- pois possui duas componentes $\langle \{v_1,v_2,v_3\}\rangle$, $\langle \{v_4\}\rangle$.
 
-
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.6\linewidth]{figures/connectedGraph.png}
@@ -154,11 +153,10 @@ A Figura~\ref{fig:connectGraph} mostra dois grafos: O grafo da esquerda é conec
 	\label{fig:connectGraph}
 \end{figure}
 
-\begin{center}
-	\begin{minipage}{0.9 \linewidth}
-		\textbf{Grafo Completo:} É um grafo simples em que todo vértice é conectado a todos os outros vértices.
-	\end{minipage}
-\end{center}
+
+\subsubsection{Grafos Completos}
+
+Introduze-se agora uma classe especial de grafos: Um grafo é dito \textit{completo} se possui todas as suas arestas possíveis, i.e., para cada par de vértices distintos $u, v \in V_G$, $u$ é adjacente a $v$ (vide Figura~\ref{fig:grafocompleto}).
 
 \begin{figure}[H]
 	\begin{center}
@@ -166,6 +164,16 @@ A Figura~\ref{fig:connectGraph} mostra dois grafos: O grafo da esquerda é conec
 	\end{center}
 	\caption{Diagrama de um grafo completo com 12 vértices ($|V| = 12$).}
 	\label{fig:grafocompleto}
+\end{figure}
+
+Em particular, chama-se de \textit{$k$-clique} um grafo $G$ com $k$ vértices tal que $G$ é completo. Por exemplo, se $k=2$ tem-se uma linha --- veja a Figura~\ref{fig:cliques}; e, se $k=3$, forma-se um triangulo.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.4\linewidth]{figures/cliques.png}
+	\end{center}
+	\caption{Em ordem: 2-clique; 3-clique; 4-clique.}
+	\label{fig:cliques}
 \end{figure}
 
 \begin{center}
