@@ -83,7 +83,7 @@ O ideal é começar pela definição geral.
 Nesse texto, porém, abstraiu-se a função de incidência $\psi_G$ pois entende-se que o conjunto de arestas $E_G$ é tal que, se $e \in E_G$, então $e = \{a, b\}$ onde $a, b \in V_G$. Fica implícita, por tanto, a associação dos elementos de  $V_G$ e $E_G$.
 \\
 
-Aos elementos desses conjuntos ($V_G$ e $E_G$), refere-se-os por \textit{vértices} e \textit{arestas}. Também, para um elemento $e \in E_G$, onde $e = \{u, v\}$, diz-se que $u$ e $v$ são \textit{vértices adjacentes}. Chama-se $u$ e $e$ de \textit{incidentes}, assim como $v$ e $e$. À quantidade de vértices adjacentes a $v$ da-se o nome \textit{grau} de $v$. Se duas arestas distintas $e_1$ e $e_2$ são incidentes com um vértice em comum, diz-se que $e_1$ e $e_2$ são \textit{arestas adjacentes}. 
+Aos elementos desses conjuntos ($V_G$ e $E_G$), refere-se-os por \textit{vértices} e \textit{arestas}. Também, para um elemento $e \in E_G$, onde $e = \{u, v\}$, diz-se que $u$ e $v$ são \textit{vértices adjacentes}. Chama-se $u$ e $e$ de \textit{incidentes}, assim como $v$ e $e$. À quantidade de vértices adjacentes a $v$ da-se o nome \textit{grau} de $v$. Para um vértice $v\in V_G$, define-se o \textit{conjunto vizinhança} $N_G(v)$ como o conjunto de todos os vértices $u\in V_G$ adjacentes a $v$. Também, se duas arestas distintas $e_1$ e $e_2$ são incidentes com um vértice em comum, diz-se que $e_1$ e $e_2$ são \textit{arestas adjacentes}. 
 
 Seja um grafo com $m$ vértices e $n$ arestas, dizer-se-há que este é um $(m, n)$ \textit{grafo}. Isto é, a Figura~\ref{fig:socialGraph}, para ilustrar, contém um $(3,2)$ grafo onde os vértices $a$ e $b$ são adjacentes, assim como as arestas $\{a, b\}$ e $\{b, c\}$, porém, os vértices $a$ e $c$ não são.
 Define-se o $(1,0)$ grafo como \textit{trivial}.
@@ -144,6 +144,7 @@ Se as arestas $e_1,e_2,\dots,e_k$ de um passeio $W$ são todas distintas --- o q
 Dois vértices $u$ e $v$ de $G$ são ditos \textit{conectados} se existe um $(u,v)$-passeio em $G$. A conectividade induz uma relação de equivalência sobre o conjunto de vértices $V$ \cite{graphTheoryApplicationsBondy}: Há uma partição de $V$ em subconjuntos não vazios $V_1, V_2, \dots, V_\omega$ tal que dois vértices $u$ e $v$ são conectados se, e somente se, $u$ e $v$ pertencem ambos ao mesmo subconjunto $V_i$. Os subgrafos induzidos $\langle V_1\rangle, \langle V_2\rangle, \dots,\langle V_\omega\rangle$ são chamados \textit{componentes de $G$}. Se $G$ tem exatamente uma única componente, então $G$ é dito \textit{conectado}; e, do contrário, $G$ é dito \textit{desconectado}. 
 
 A Figura~\ref{fig:connectGraph} mostra dois grafos: O grafo da esquerda é conectado --- possui uma única componente $\langle \{v_1,v_2,v_3,v_4\}\rangle$; porém, o da direita não é --- pois possui duas componentes $\langle \{v_1,v_2,v_3\}\rangle$, $\langle \{v_4\}\rangle$.
+
 
 \begin{figure}[H]
 	\begin{center}
