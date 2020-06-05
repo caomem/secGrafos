@@ -2,7 +2,7 @@
 Esta seção tem como objetivo apresentar um breve resumo da \textit{teoria de grafos}, tema amplamente estudado por diversos matemáticos e aplicado em diversas áreas do conhecimento como computação, engenharia e matemática \cite{graphTheoryApplicationsBondy}.
 
 \subsection{Descoberta (Eureka!)}
-Costuma-se dizer que a teoria iniciou em 1736, com base no artigo publicado por Leonhard Euler sobre as 7 pontes de Königsberg \cite{euler:KOENIGSBERG} \cite{graphTheoryApplicationsBondy}, representada na Figura~\ref{fig:koni}. Conta a história que os moradores daquela região perguntavam-se sobre a possibilidade de atravessar todas as sete pontes do local sem ter que repetir alguma delas. Esse é um problema muito usado para introduzir o tema \cite{problemsInMath} --- propõe-se o desafio de ligar todos os pontos de um desenho sem tirar o lápis do papel e sem passar duas vezes no mesmo ponto. Euler provou que isso não era possível ao formular matematicamente o problema, dando origem a esta teoria.
+Costuma-se dizer que a teoria iniciou em 1736, com base no artigo publicado por Leonhard Euler sobre as 7 pontes de Königsberg \cite{euler:KOENIGSBERG} \cite{graphTheoryApplicationsBondy}, representada na Figura~\ref{fig:koni}. Conta a história que os moradores daquela região perguntavam-se sobre a possibilidade de atravessar todas as sete pontes do local sem ter que repetir alguma delas. Esse é um problema muito usado para introduzir o tema \cite{problemsInMath} --- propõe-se o desafio de ligar todos os pontos de um desenho sem tirar o lápis do papel e sem passar duas vezes no mesmo ponto. Para o caso das pontes de Königsberg, Euler provou que era impossível fazer isso ao formular matematicamente o problema, dando origem a esta teoria.
 
 \begin{figure}[H]
 	\begin{center}
@@ -12,7 +12,7 @@ Costuma-se dizer que a teoria iniciou em 1736, com base no artigo publicado por 
 	\label{fig:koni}
 \end{figure}
 
-A grande ideia de Euler foi abstrair o problema, vê-lo de uma forma elementar, como um conjunto de pontos conectados por curvas. Isso pode ser representado por um ``gráfico'', conforme a Figura~\ref{fig:koniGrafo} --- é daí a origem do termo em inglês "Graph", que é tradução literal de "Gráfico". Essa representação facilita a análise e a busca por uma solução. Com isso, Euler percebeu que só seria possível solucionar o problema se houvessem exatamente nenhum ou apenas dois pontos conectados por um número impar de curvas (ou pontes) --- o par de caminhos está associado com o ato de entrar e sair de um ponto \cite{euler:KOENIGSBERG}. Note que o caso de Köenigsberg, por tanto, não possui solução.
+A grande ideia de Euler foi abstrair o problema: vê-lo de uma forma elementar, como um conjunto de pontos conectados por curvas. Isso pode ser representado por um ``gráfico'', conforme a Figura~\ref{fig:koniGrafo} --- é daí a origem do termo em inglês ``Graph'', que é tradução literal de ``Gráfico''. Essa representação facilita a análise e a busca por uma solução. Com isso, Euler percebeu que só seria possível solucionar o problema se houvessem exatamente nenhum ou apenas dois pontos conectados por um número impar de curvas (ou pontes) --- o par de caminhos está associado com o ato de entrar e sair de um ponto \cite{euler:KOENIGSBERG}. Note que o caso de Köenigsberg, por tanto, não possui solução.
 
 \begin{figure}[H]
 	\begin{center}
@@ -22,7 +22,7 @@ A grande ideia de Euler foi abstrair o problema, vê-lo de uma forma elementar, 
 	\label{fig:koniGrafo}
 \end{figure}
 
-Mas não podemos deixar todo o mérito com Euler. O conceito de grafo é muito intuitivo e foi proposto por diversas mentes brilhantes como formas de solucionar problemas que, em essência, são muito parecidos. Por exemplo, após Euler, a teoria foi redescoberta por Kirchhoff e Cayley \cite{graphTheoryFHarary}. Kirchhoff desenvolveu a teoria por volta de 1847, enquanto solucionava sistemas de equações lineares que relacionavam as correntes que percorriam as malhas de um circuito elétrico \cite{kirchhoff1847ueber}. Dez anos depois, em 1857, foi a vez de Cayley que estudava diferentes estruturas em bioquímica formadas por carbonos (sempre com quatro ligações químicas) e hidrogênios (com apenas uma ligação), onde conseguiu formular seu problema introduzindo o conceito de \textit{árvore} em grafos \cite{cayley1897theory}.  
+Mas não podemos deixar todo o mérito com Euler. O conceito de grafo é muito intuitivo e foi proposto por diversas mentes brilhantes como forma de solucionar problemas que, em essência, são muito parecidos. Por exemplo, após Euler, a teoria foi redescoberta por Kirchhoff e Cayley \cite{graphTheoryFHarary}. Kirchhoff desenvolveu esse conceito por volta de 1847, enquanto solucionava sistemas de equações lineares que relacionavam as correntes que percorriam as malhas de um circuito elétrico \cite{kirchhoff1847ueber}. Dez anos depois, em 1857, foi a vez de Cayley, que estudava diferentes estruturas em bioquímica formadas por carbonos (com quatro ligações químicas) e hidrogênios (com apenas uma ligação), onde conseguiu formular seu problema introduzindo o conceito de \textit{árvore} em grafos \cite{cayley1897theory}.  
 
 Além dessas, muitas outras situações reais podem ser convenientemente representadas por simples diagramas contendo um conjunto de pontos e um conjunto de relações entre pares desses pontos. Por exemplo, pode-se definir o conjunto $P = \{a,b,c\}$ das pessoas $a, b$ e $c$ e um conjunto $A = \{\{a,b\}, \{b,c\}\}$ como o conjunto de amizades entre essas pessoas --- no caso, $a$ é amigo de $b$, que é amigo de $c$, porém $a$ não é amigo de $c$. 
 Esta análise se torna muitíssimo útil quando se deseja estudar como uma informação se propaga em redes sociais.
@@ -51,7 +51,7 @@ O ideal é começar pela definição geral.
 Nesse texto, porém, abstraiu-se a função de incidência $\psi_G$ pois entende-se que o conjunto de arestas $E_G$ é tal que, se $e \in E_G$, então $e = \{a, b\}$ onde $a, b \in V_G$. Fica implícita, por tanto, a associação dos elementos de  $V_G$ e $E_G$.
 \\
 
-Aos elementos desses conjuntos ($V_G$ e $E_G$), refere-se-os por \textit{vértices} e \textit{arestas}. Também, para um elemento $e \in E_G$, onde $e = \{u, v\}$, diz-se que $u$ e $v$ são \textit{vértices adjacentes}. Chama-se $u$ e $e$ de \textit{incidentes}, assim como $v$ e $e$. À quantidade de vértices adjacentes a $v$ da-se o nome \textit{grau} de $v$. Para um vértice $v\in V_G$, define-se o \textit{conjunto vizinhança} $N_G(v)$ como o conjunto de todos os vértices $u\in V_G$ adjacentes a $v$. Também, se duas arestas distintas $e_1$ e $e_2$ são incidentes com um vértice em comum, diz-se que $e_1$ e $e_2$ são \textit{arestas adjacentes}. 
+Aos elementos dos conjuntos $V_G$ e $E_G$, refere-se-os por \textit{vértices} e \textit{arestas}, respectivamente. Também, para uma aresta $e \in E_G$, onde $e = \{u, v\}$, diz-se que $u$ e $v$ são \textit{vértices adjacentes}. Chama-se $u$ e $e$ de \textit{incidentes}, assim como $v$ e $e$. À quantidade de vértices adjacentes a $v$ dá-se o nome \textit{grau} de $v$. Para um vértice $v\in V_G$, define-se o \textit{conjunto vizinhança} $N_G(v)$ como o conjunto de todos os vértices $u\in V_G$ adjacentes a $v$. Também, se duas arestas distintas $e_1$ e $e_2$ são incidentes com um vértice em comum, diz-se que $e_1$ e $e_2$ são \textit{arestas adjacentes}. 
 
 Seja um grafo com $m$ vértices e $n$ arestas, dizer-se-há que este é um $(m, n)$ \textit{grafo}. Isto é, a Figura~\ref{fig:socialGraph}, para ilustrar, contém um $(3,2)$ grafo onde os vértices $a$ e $b$ são adjacentes, assim como as arestas $\{a, b\}$ e $\{b, c\}$, porém, os vértices $a$ e $c$ não são.
 Define-se o $(1,0)$ grafo como \textit{trivial}.
@@ -77,7 +77,7 @@ Porém, para esse trabalho não interessa o estudo de multigrafos ou pseudografo
 
 \subsection{Outras Definições Importantes}
 
-Diz-se que um grafo $G$ é \textit{rotulado} quando pode-se distinguir seus $m$ vértices ao nomeá-los --- algo como $v_1, v_2, \dots, v_m$. Por exemplo, os grafos da Figura~\ref{fig:graphisomorphic} são rotulados, enquanto o grafo da Figura~\ref{fig:pseudograph} não é. 
+Diz-se que um $(m,n)$ grafo $G$ é \textit{rotulado} quando pode-se distinguir seus $m$ vértices ao nomeá-los --- algo como $v_1, v_2, \dots, v_m$. Por exemplo, os grafos da Figura~\ref{fig:graphisomorphic} são rotulados, enquanto o grafo da Figura~\ref{fig:pseudograph} não é. Quando não é dito o contrário, considera-se todo grafo como rotulado.
 
 Dois grafos $G = (V_G, E_G)$ e $H = (V_H, E_H)$ são ditos \textit{isomorfos} (escreve-se $G \cong H$) quando existe uma correspondência biunívoca entre os conjuntos de vértices $V_G$ e $V_H$ que preserve suas adjacências. A Figura~\ref{fig:graphisomorphic} ilustra essa situação, com a correspondência $v_i \longleftrightarrow v_i$.
 
