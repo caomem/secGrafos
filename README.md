@@ -9,6 +9,7 @@ This repository is an introdutory section about Graph Theory.
 4. [X] Write a topic about neighborhood of a vertex
 5. [X] Write a weighted graph
 6. [X] Write on the complete and cliques graphs
+7. [ ] Write about rigidity theory
 <!---7. [ ] Write a subsection about the vertex orders
 8. [ ] Write a subsection about trees-->
 
