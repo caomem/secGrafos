@@ -2,7 +2,7 @@
 Esta seção tem como objetivo apresentar um breve resumo da \textit{Teoria de Grafos}, tema amplamente estudado por diversos matemáticos e aplicado em diversas áreas do conhecimento como computação, engenharia e matemática \cite{graphTheoryApplicationsBondy}.
 
 \subsection{Descoberta (Eureka!)}
-Costuma-se dizer que a teoria se iniciou em 1736, com base no artigo publicado por Leonhard Euler (1707 a 1783) sobre as 7 pontes de Königsberg \cite{euler:KOENIGSBERG, graphTheoryApplicationsBondy}, representada na Figura~\ref{fig:koni}. Conta a história que os moradores daquela região perguntavam-se sobre a possibilidade de atravessar todas as sete pontes do local sem ter que repetir alguma delas. Esse é um problema muito usado para introduzir o tema \cite{problemsInMath} --- propõe-se o desafio de ligar todos os pontos de um desenho sem tirar o lápis do papel e sem passar duas vezes no mesmo ponto. Para o caso das pontes de Königsberg, Euler provou que era impossível fazer isso ao formular matematicamente o problema, dando origem a esta teoria.
+Costuma-se dizer que a teoria se iniciou em 1736, com base no artigo publicado por Leonhard Euler (1707 a 1783) sobre as 7 pontes de Königsberg \cite{euler:KOENIGSBERG}, representada na Figura~\ref{fig:koni}. Conta a história que os moradores daquela região perguntavam-se sobre a possibilidade de atravessar todas as sete pontes do local sem ter que repetir alguma delas. Esse é um problema muito usado para introduzir o tema \cite{problemsInMath} --- propõe-se o desafio de ligar todos os pontos de um desenho sem tirar o lápis do papel e sem passar duas vezes no mesmo ponto. Para o caso das pontes de Königsberg, Euler provou que era impossível fazer isso ao formular matematicamente o problema, dando origem a esta teoria.
 
 \begin{minipage}{0.60 \linewidth}
 	\begin{figure}[H]
@@ -71,26 +71,26 @@ Esta análise se torna muitíssimo útil quando se deseja estudar como uma infor
 
 \subsection{Definições e Resultados Principais}
 
-Não há um forte consenso sobre as terminologias usadas pelos autores sobre grafos \cite{graphTheoryFHarary}. Essa confusão se deve tanto pela sua vasta disseminação em diversas áreas como pela enorme abstração que ela carrega. Cayley poderia chamar as relações entre pontos de ligações químicas enquanto Kirchhoff chamaria de curto-circuitos.
-No que se segue, há aqui um apanhado de definições sobre a teoria de grafos. Mas não sobre toda ela. Essa é uma grande área da matemática e não cabe aborda-lá completamente nesse texto. Trata-se apenas do essencial para que o leitor possa progredir sem ter que consultar uma bibliografia complementar sobre grafos.
+Não há um forte consenso sobre as terminologias usadas pelos autores sobre grafos. Essa confusão se deve tanto pela sua vasta disseminação em diversas áreas como pela enorme abstração que ela carrega. Cayley poderia chamar as relações entre pontos de ligações químicas enquanto Kirchhoff chamaria de curto-circuitos.
+No que se segue, há aqui um apanhado de definições sobre a Teoria de Grafos fortemente baseado em \cite{graphTheoryFHarary} e \cite{graphTheoryApplicationsBondy}. Mas não sobre toda ela. Essa é uma grande área da matemática e não cabe aborda-lá completamente nesse texto. Trata-se apenas do essencial para que o leitor possa progredir sem ter que consultar uma bibliografia complementar sobre grafos.
 
 \begin{center}
 	\begin{minipage}{0.9 \linewidth}
-		\textbf{Definição:} Um \textit{grafo} $G$ é uma tripla ordenada da forma $(V_G,E_G, \psi_{G})$, composta por um \textit{conjunto de vértices} $V_G$, um \textit{conjunto de arestas} $E_G$ e uma \textit{função de incidência} $\psi_{G}$ que, por sua vez, associa a cada elemento de $E_G$ um par não ordenado de elementos (nem sempre distintos) de $V_G$.
+		\textbf{Definição:} Um \textit{Grafo} $G$ é uma tripla ordenada da forma $(V_G,E_G, \psi_{G})$, composta por um \textit{Conjunto de Vértices} $V_G$, um \textit{Conjunto de Arestas} $E_G$ e uma \textit{Função de Incidência} $\psi_{G}$ que, por sua vez, associa a cada elemento de $E_G$ um par não ordenado de elementos (nem sempre distintos) de $V_G$.
 	\end{minipage}
 \end{center} 
 
-Nesse texto, porém, abstraiu-se a função de incidência $\psi_G$ pois entende-se que o conjunto de arestas $E_G$ é tal que, se $e \in E_G$, então $e = \{a, b\}$ onde $a, b \in V_G$. Fica implícita, por tanto, a associação dos elementos de  $V_G$ e $E_G$.
+Nesse texto, porém, abstraiu-se a função de incidência $\psi_G$ pois entende-se que o conjunto de arestas $E_G$ é tal que, se $e \in E_G$, então $e = \{a, b\}$ onde $a, b \in V_G$. Fica implícita, portanto, a associação dos elementos de  $V_G$ e $E_G$.
 \\
 
-Aos elementos dos conjuntos $V_G$ e $E_G$, refere-se-os por \textit{vértices} e \textit{arestas}, respectivamente. Também, para uma aresta $e \in E_G$, onde $e = \{u, v\}$, diz-se que $u$ e $v$ são \textit{vértices adjacentes}. Chama-se $u$ e $e$ de \textit{incidentes}, assim como $v$ e $e$. À quantidade de vértices adjacentes a $v$ dá-se o nome \textit{grau} de $v$. Para um vértice $v\in V_G$, define-se o \textit{conjunto vizinhança} $N_G(v)$ como o conjunto de todos os vértices $u\in V_G$ adjacentes a $v$. Também, se duas arestas distintas $e_1$ e $e_2$ são incidentes com um vértice em comum, diz-se que $e_1$ e $e_2$ são \textit{arestas adjacentes}. 
+Aos elementos dos conjuntos $V_G$ e $E_G$, refere-se-os por \textit{Vértices} e \textit{Arestas}, respectivamente. Também, para uma aresta $e \in E_G$, onde $e = \{u, v\}$, diz-se que $u$ e $v$ são \textit{Vértices Adjacentes}. Chama-se $u$ e $e$ de \textit{Incidentes}, assim como $v$ e $e$. À quantidade de vértices adjacentes a $v$ dá-se o nome \textit{Grau} de $v$. Para um vértice $v\in V_G$, define-se o \textit{Conjunto Vizinhança} $N_G(v)$ como o conjunto de todos os vértices $u\in V_G$ adjacentes a $v$. Também, se duas arestas distintas $e_1$ e $e_2$ são incidentes com um vértice em comum, diz-se que $e_1$ e $e_2$ são \textit{Arestas Adjacentes}. 
 \\
 
 Seja um grafo com $m$ vértices e $n$ arestas, dizer-se-á que este é um $(m, n)$ \textit{grafo}. Isto é, a Figura~\ref{fig:socialGraph}, para ilustrar, contém um $(3,2)$ grafo onde os vértices $a$ e $b$ são adjacentes, assim como as arestas $\{a, b\}$ e $\{b, c\}$, porém, os vértices $a$ e $c$ não são.
-Define-se o $(1,0)$ grafo como \textit{trivial}.
+Define-se o $(1,0)$ Grafo como \textit{Trivial}.
 \\
 
-Existem muitas variações de grafos \cite{graphTheoryFHarary}. Perceba que a definição de grafo permite \textit{loops} (também chamado de \textit{laço}, uma aresta da forma $e = \{v,v\}$, ou seja, $v$ é adjacente a si mesmo) e \textit{múltiplas arestas} (mais do que uma aresta ligando os mesmos dois vértices). Grafos que não permitem múltiplas arestas ou loops são ditos \textit{simples}. Grafos que permitem múltiplas arestas, mas não loops, são chamados de \textit{multigrafos}. Caso também permitam os loops, os chamamos de \textit{pseudografos}. Na Figura~\ref{fig:koniGrafo} (do problema das pontes de Köenigsberg) temos um multigrafo e na Figura~\ref{fig:pseudograph} um pseudografo.
+Existem muitas variações de grafos. A definição de grafo permite \textit{Loops} (também chamado de \textit{Laço}, uma aresta da forma $e = \{v,v\}$, ou seja, $v$ é adjacente a si mesmo) e \textit{Múltiplas Arestas} (mais do que uma aresta ligando os mesmos dois vértices). Grafos que não permitem múltiplas arestas ou loops são ditos \textit{Simples}. Grafos que permitem múltiplas arestas, mas não loops, são chamados de \textit{Multigrafos}. Caso também permitam os loops, os chamamos de \textit{Pseudografos}. Na Figura~\ref{fig:koniGrafo} (do problema das pontes de Köenigsberg) temos um multigrafo e na Figura~\ref{fig:pseudograph} um pseudografo.
 
 \begin{figure}[H]
 	\begin{center}
@@ -104,13 +104,13 @@ Porém, para esse trabalho não interessa o estudo de multigrafos ou pseudografo
 
 \begin{center}
 	\begin{minipage}{0.9 \linewidth}
-		\textbf{Definição:} Um \textit{grafo simples} $G$ é uma dupla ordenada da forma $(V_G,E_G)$, composta por um conjunto não nulo e finito $V_G$ e outro conjunto finito $E_G$ de pares não ordenados de elementos \textbf{distintos} pertencentes a $V_G$.
+		\textbf{Definição:} Um \textit{Grafo Simples} $G$ é uma dupla ordenada da forma $(V_G,E_G)$, composta por um conjunto não nulo e finito $V_G$ e outro conjunto finito $E_G$ de pares não ordenados de elementos \textbf{distintos} pertencentes a $V_G$.
 	\end{minipage}
 \end{center} 
 
-Diz-se que um $(m,n)$ grafo $G$ é \textit{rotulado} quando pode-se distinguir seus $m$ vértices ao nomeá-los --- algo como $v_1, v_2, \dots, v_m$. Por exemplo, os grafos da Figura~\ref{fig:graphisomorphic} são rotulados, enquanto o grafo da Figura~\ref{fig:pseudograph} não é. Quando não é dito o contrário, considera-se todo grafo como rotulado.
+Diz-se que um $(m,n)$ grafo $G$ é \textit{Rotulado} quando pode-se distinguir seus $m$ vértices ao nomeá-los --- algo como $v_1, v_2, \dots, v_m$. Por exemplo, os grafos da Figura~\ref{fig:graphisomorphic} são rotulados, enquanto o grafo da Figura~\ref{fig:pseudograph} não é. Quando não é dito o contrário, considera-se todo grafo como rotulado.
 
-Dois grafos $G = (V_G, E_G)$ e $H = (V_H, E_H)$ são ditos \textit{isomorfos} (escreve-se $G \cong H$) quando existe uma correspondência biunívoca entre os conjuntos de vértices $V_G$ e $V_H$ que preserve suas adjacências. A Figura~\ref{fig:graphisomorphic} ilustra essa situação, com a correspondência $v_i \longleftrightarrow v_i$.
+Dois grafos $G = (V_G, E_G)$ e $H = (V_H, E_H)$ são ditos \textit{Isomorfos} (escreve-se $G \cong H$) quando existe uma correspondência biunívoca entre os conjuntos de vértices $V_G$ e $V_H$ que preserve suas adjacências. A Figura~\ref{fig:graphisomorphic} ilustra essa situação, com a correspondência $v_i \longleftrightarrow v_i$.
 
 \begin{figure}[H]
 	\begin{center}
@@ -124,23 +124,23 @@ O isomorfismo é uma relação de equivalência. Fica claro que, por mais que se
 
 \subsubsection{Subgrafos}
 
-Diz-se que o grafo $G_1 = (V_{G_1}, E_{G_1})$ é \textit{subgrafo} de $G = (V_G, E_G)$ se $V_{G_1} \subset V_G$ e $E_{G_1} \subset E_G$. Se $G_1$ é subgrafo de $G$, então $G$ é \textit{supergrafo} de $G_1$. Para qualquer $V \subset V_G$, existe um \textit{subgrafo induzido} $\langle V \rangle$ definido por $(V, E)$, onde $E \subset E_G$ contém todas as arestas $(v_1, v_2) \in E_G$ tal que $v_1, v_2 \in V$. 
+Diz-se que o grafo $G_1 = (V_{G_1}, E_{G_1})$ é \textit{Subgrafo} de $G = (V_G, E_G)$ se $V_{G_1} \subset V_G$ e $E_{G_1} \subset E_G$. Se $G_1$ é subgrafo de $G$, então $G$ é \textit{Supergrafo} de $G_1$. Para qualquer $V \subset V_G$, existe um \textit{Subgrafo Induzido} $\langle V \rangle$ definido por $(V, E)$, onde $E \subset E_G$ contém todas as arestas $(v_1, v_2) \in E_G$ tal que $v_1, v_2 \in V$. 
 Fica claro que dois vértices em $\langle V \rangle$ são adjacentes se, e somente se, forem também adjacentes em $G$.
 
 Pode-se \textit{remover um vértice} $v$ de um grafo $G = (V_G, E_G)$, que resulta no subgrafo induzido $G - v = \langle V_G \setminus \{v\}\rangle$. Da mesma forma, pode-se \textit{remover uma aresta} $e$ de um grafo $G = (V_G, E_G)$, resultando no grafo $G-e = (V_G, E_G \setminus \{e\})$.
 
 \subsubsection{Caminhos}
 
-Um \textit{passeio} em $G$ é uma sequência finita não nula $W = v_0e_1v_1e_2v_2\dots e_kv_k$, onde seus termos são alternados entre vértices e arestas, tal que, para $1\leq i \leq k$, antes e depois de $e_i$ vem $v_{i-1}$ e $v_i$, respectivamente. Diz-se que $W$ é um passeio de $v_0$ para $v_k$, ou um $(v_0,v_k)$-passeio \cite{graphTheoryApplicationsBondy}. Os vértices $v_0$ e $v_k$ são chamados origem e fim do passeio, respectivamente, e $v_1,v_2,\dots,v_{k-1}$ são os vértices internos. O número $k$ é o comprimento de $W$. 
+Um \textit{Passeio} em $G$ é uma sequência finita não nula $W = v_0e_1v_1e_2v_2\dots e_kv_k$, onde seus termos são alternados entre vértices e arestas, tal que, para $1\leq i \leq k$, antes e depois de $e_i$ vem $v_{i-1}$ e $v_i$, respectivamente. Diz-se que $W$ é um passeio de $v_0$ para $v_k$, ou um $(v_0,v_k)$-passeio. Os vértices $v_0$ e $v_k$ são chamados origem e fim do passeio, respectivamente, e $v_1,v_2,\dots,v_{k-1}$ são os vértices internos. O número $k$ é o comprimento de $W$. 
 Em um grafo simples, um passeio $v_0e_1v_1e_2v_2\dots e_kv_k$ é determinado suficientemente pela sequência dos vértices que o constitui $v_0v_1v_2\dots v_k$.
 
-Se $W=v_0v_1\dots v_k$ e $W' = v_kv_{k+1}\dots v_l$ são passeios, o passeio $W^{-1} = v_kv_{k-1}\dots v_0$ é dito \textit{passeio reverso} de $W$ e o passeio $WW' = v_0v_1\dots v_l$ é dito \textit{concatenação} de $W$ com $W'$. Chama-se \textit{seção} do passeio $W$ uma subsequência $(v_i,v_j)$-seção $= v_iv_{i+1}\dots v_j$ de termos consecutivos de $W$ \cite{graphTheoryApplicationsBondy}. 
+Se $W=v_0v_1\dots v_k$ e $W' = v_kv_{k+1}\dots v_l$ são passeios, o passeio $W^{-1} = v_kv_{k-1}\dots v_0$ é dito \textit{Passeio Reverso} de $W$ e o passeio $WW' = v_0v_1\dots v_l$ é dito \textit{Concatenação} de $W$ com $W'$. Chama-se \textit{Seção} do passeio $W$ uma subsequência $(v_i,v_j)$-seção $= v_iv_{i+1}\dots v_j$ de termos consecutivos de $W$. 
 
-Se as arestas $e_1,e_2,\dots,e_k$ de um passeio $W$ são todas distintas --- o que sempre ocorre em grafos simples --- chama-se $W$ de \textit{trilha}.  Se, adicionalmente, os vértices da trilha $W$ forem todos distintos, chama-se $W$ de \textit{caminho} (também conhecido como \textit{caminho simples} \cite{grafosPremioElon}).
+Se as arestas $e_1,e_2,\dots,e_k$ de um passeio $W$ são todas distintas --- o que sempre ocorre em grafos simples --- chama-se $W$ de \textit{Trilha}.  Se, adicionalmente, os vértices da trilha $W$ forem todos distintos, chama-se $W$ de \textit{Caminho} (também conhecido como \textit{Caminho Simples}).
 
 \subsubsection{Conectividade}
 
-Dois vértices $u$ e $v$ de $G$ são ditos \textit{conectados} se existe um $(u,v)$-passeio em $G$. A conectividade induz uma relação de equivalência sobre o conjunto de vértices $V$ \cite{graphTheoryApplicationsBondy}: Há uma partição de $V$ em subconjuntos não vazios $V_1, V_2, \dots, V_\omega$ tal que dois vértices $u$ e $v$ são conectados se, e somente se, $u$ e $v$ pertencem ambos ao mesmo subconjunto $V_i$. Os subgrafos induzidos $\langle V_1\rangle, \langle V_2\rangle, \dots,\langle V_\omega\rangle$ são chamados \textit{componentes de $G$}. Se $G$ tem exatamente uma única componente, então $G$ é dito \textit{conectado}; e, do contrário, $G$ é dito \textit{desconectado}. 
+Dois vértices $u$ e $v$ de $G$ são ditos \textit{Conectados} se existe um $(u,v)$-passeio em $G$. A conectividade induz uma relação de equivalência sobre o conjunto de vértices $V$: Há uma partição de $V$ em subconjuntos não vazios $V_1, V_2, \dots, V_\omega$ tal que dois vértices $u$ e $v$ são conectados se, e somente se, $u$ e $v$ pertencem ambos ao mesmo subconjunto $V_i$. Os subgrafos induzidos $\langle V_1\rangle, \langle V_2\rangle, \dots,\langle V_\omega\rangle$ são chamados \textit{Componentes de $G$}. Se $G$ tem exatamente uma única componente, então $G$ é dito \textit{Conectado}; e, do contrário, $G$ é dito \textit{Desconectado}. 
 
 A Figura~\ref{fig:connectGraph} mostra dois grafos: O grafo da esquerda é conectado --- possui uma única componente $\langle \{v_1,v_2,v_3,v_4\}\rangle$; porém, o da direita não é --- pois possui duas componentes $\langle \{v_1,v_2,v_3\}\rangle$, $\langle \{v_4\}\rangle$.
 
@@ -152,10 +152,9 @@ A Figura~\ref{fig:connectGraph} mostra dois grafos: O grafo da esquerda é conec
 	\label{fig:connectGraph}
 \end{figure}
 
-
 \subsubsection{Grafos Completos}
 
-Introduze-se agora uma classe especial de grafos \cite{graphTheoryApplicationsBondy}: Um grafo é dito \textit{completo} se possui todas as suas arestas possíveis, i.e., para cada par de vértices distintos $u, v \in V_G$, $u$ é adjacente a $v$ (vide Figura~\ref{fig:grafocompleto}).
+Introduze-se agora uma classe especial de grafos: Um grafo é dito \textit{Completo} se possui todas as suas arestas possíveis, i.e., para cada par de vértices distintos $u, v \in V_G$, $u$ é adjacente a $v$ (vide Figura~\ref{fig:grafocompleto}).
 
 \begin{figure}[H]
 	\begin{center}
@@ -168,7 +167,7 @@ Introduze-se agora uma classe especial de grafos \cite{graphTheoryApplicationsBo
 Usando combinatória, sabe-se que todo grafo completo com $n$ vértices possui ${n \choose 2}=\frac{n(n-1)}{2}$ arestas.
 \\
 
-Em particular, chama-se de \textit{$k$-clique} um subgrafo $G'$ de $G$, com $k$ vértices, tal que $G'$ é completo, independente se seu supergrafo $G$ é ou não completo. Por exemplo, selecionando arbitrariamente quaisquer dois vértices do grafo da Figura~\ref{fig:grafocompleto}, pode-se gerar um $2$-clique induzido por estes e, caso toma-se 3 vértices, pode-se gerar um $3$-clique (veja a Figura~\ref{fig:cliques}).
+Em particular, chama-se de \textit{$k$-Clique} um subgrafo $G'$ de $G$, com $k$ vértices, tal que $G'$ é completo, independente se seu supergrafo $G$ é ou não completo. Por exemplo, selecionando arbitrariamente quaisquer dois vértices do grafo da Figura~\ref{fig:grafocompleto}, pode-se gerar um $2$-clique induzido por estes e, caso toma-se 3 vértices, pode-se gerar um $3$-clique (veja a Figura~\ref{fig:cliques}).
 
 \begin{minipage}{0.55 \linewidth}
 	\begin{figure}[H]
@@ -192,8 +191,8 @@ Em particular, chama-se de \textit{$k$-clique} um subgrafo $G'$ de $G$, com $k$ 
 
 \subsubsection{Grafos Ponderados}
 
-As arestas $e\in E$ de um grafo $G$ pode estar associadas com um número real $d(e)$, chamado de \textit{peso da aresta $e$} \cite{graphTheoryApplicationsBondy} (veja a Figura~\ref{fig:weightedGraph}). Quando $G$ tem todas as suas arestas associadas com pesos, define-se $G$ como um \textit{grafo ponderado}. Grafos ponderados são frequentemente associados com aplicações em teoria de grafos \cite{grafosPremioElon}.
+As arestas $e\in E$ de um grafo $G$ pode estar associadas com um número real $d(e)$, chamado de \textit{Peso da Aresta $e$} (veja a Figura~\ref{fig:weightedGraph}). Quando $G$ tem todas as suas arestas associadas com pesos, define-se $G$ como um \textit{Grafo Ponderado}. Grafos ponderados são frequentemente associados com aplicações em teoria de grafos \cite{grafosPremioElon}.
 
-Costuma-se definir uma \textit{função ponderação} $d: E \longrightarrow \mathbb{R}$ para mapear o conjunto de arestas $E$ no conjunto dos números reais $\mathbb{R}$ \cite{libertiEDG}. Escreve-se $G = (V_G,\;E_G,\;d)$ como um grafo ponderado $(V_G,\; E_G)$ e função ponderação $d$.
+Costuma-se definir uma \textit{Função Ponderação} $d: E \longrightarrow \mathbb{R}$ para mapear o conjunto de arestas $E$ no conjunto dos números reais $\mathbb{R}$ \cite{libertiEDG}. Escreve-se $G = (V_G,\;E_G,\;d)$ como um grafo ponderado $(V_G,\; E_G)$ e função ponderação $d$.
 
 
